@@ -1,0 +1,16 @@
+:root {
+  --cor-principal: #E6007E;  /* Rosa Choque / Magenta da logo */
+  --cor-fundo: #000000;      /* Fundo Preto elegante */
+  --cor-card: #1A1A1A;       /* Tom de cinza escuro para cartões/seções */
+  --cor-texto: #FFFFFF;      /* Texto Branco para alto contraste */
+  --cor-destaque: #E6AF8B;   /* Tom Rose Gold / Nude metálico para detalhes */
+  
+  /* Variáveis extras da sua marca: */
+  --cor-texto-secundario: #B53683; /* Rosa Fúcsia mais suave */
+  --cor-borda: #333333;           /* Cinza para bordas discretas */
+}
+body {
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  font-family: Arial, sans-serif;
+}
