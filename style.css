@@ -14,3 +14,185 @@ body {
   color: var(--cor-texto);
   font-family: Arial, sans-serif;
 }
+
+.menu{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  font-size: 20px;
+  border-bottom: 1px solid var(--cor-borda);
+  height: 70px;
+}
+.menu_links ul {
+  display:flex;
+  justify-content:space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap:3rem;
+  margin-right: 2rem;
+}
+
+.menu_links ul li a {
+  color: var(--cor-texto);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.menu_links ul li a:hover {
+  color: var(--cor-destaque);
+}
+
+.banner{
+  background-color: var(--cor-principal);
+  height: 100%;
+  padding: 0.1rem;
+}
+.container_destaque{
+  display: flex;
+  justify-content: center;
+  background-color: var(--cor-texto);
+  padding:0;
+  color:var(--cor-fundo)
+}
+.destaque{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 300px;
+  padding: 1rem;
+}
+.destaque_card{
+  background-color: var(--cor-card);
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin: 0 1rem;
+}
+
+.container_prova{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--cor-destaque);
+  padding:0;
+  color:var(--cor-fundo)
+}
+.container_prova h1{
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.prova{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 300px;
+  padding: 1rem;
+}
+.prova_card{
+  background-color: var(--cor-card);
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin: 0 1rem;
+}
+
+/* Reset básico para o rodapé */
+.container_rodape {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 40px 20px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.rodape {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.rodape_coluna h2, 
+.rodape_coluna h3 {
+    margin-bottom: 15px;
+    color: #f4f4f4;
+}
+
+.rodape_coluna ul {
+    list-style: none;
+    padding: 0;
+}
+
+.rodape_coluna ul li {
+    margin-bottom: 8px;
+}
+
+.rodape_coluna a {
+    color: #cccccc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.rodape_coluna a:hover {
+    color: #ffffff;
+}
+
+.rodape_direitos {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #333333;
+    font-size: 0.9rem;
+    color: #888888;
+}
+
+/* Estilos para a seção Segue nós */
+.redes_sociais {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.redes_sociais a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #2a2a2a;
+    color: #ffffff;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.redes_sociais a:hover {
+    background-color: #007bff; /* Cor principal no hover */
+    transform: translateY(-3px);
+}
+.desenvolvido_por {
+    margin-top: 5px;
+    font-size: 0.85rem;
+    color: #aaaaaa;
+}
+
+.desenvolvido_por a {
+    color: #007bff; /* Cor do link (pode ajustar para a cor da sua marca) */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.desenvolvido_por a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
