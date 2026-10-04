@@ -1,135 +1,231 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
     <title>Indy Professional | Sobre Nós</title>
+
+    <!-- Font Awesome para Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Estilo CSS Principal -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
- <Section class ="menu">
-        <div class="logo_menu">
-            <img src="img/logo.jpeg" alt="Logo Indy Professional" width="100" height="100">
-        </div>
-        <div class="menu_links">
-            <ul>
+
+    <!-- Cabeçalho / Menu Fixo -->
+    <header class="header">
+        <nav class="menu_container">
+            <div class="logo_menu">
+                <a href="index.html">
+                    <img src="img/logo.jpeg" alt="Logo Indy Professional">
+                </a>
+            </div>
+            <ul class="menu_links">
                 <li><a href="index.html">Início</a></li>
-                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="sobre.html" class="active">Sobre Nós</a></li>
                 <li><a href="produto.html">Produtos</a></li>
             </ul>
-        </div>
-    </Section>
+        </nav>
+    </header>
 
-    <section class="cabecario">
-        <div>
-            <h1>Sobre Nós</h1>
+    <!-- Cabeçalho Superior da Página -->
+    <section class="pagina_cabecalho">
+        <div class="cabecalho_conteudo">
+            <span class="subtitulo_secao">Nossa História & Legado</span>
+            <h1>Sobre a <span class="destaque_rosa">Indy Professional</span></h1>
+            <p>Conectando inovação capilar, ciência e paixão pela beleza profissional.</p>
         </div>
     </section>
+
+    <!-- Seção Quem Somos -->
     <section class="container_sobre">
-        <div>
-            <img src="img/logo.jpeg" alt="Perfil" width="100" height="100">
-        </div>
-        <div class="sobre_texto">
-            <h2>Quem Somos</h2>
-            <p>Somos uma empresa dedicada a fornecer soluções de alta qualidade para nossos clientes. Com uma equipe
-                experiente e comprometida, buscamos sempre superar as expectativas e entregar resultados excepcionais.
-            </p>
-    </section>
-
-    <section class="card_sobre">
-        <div class="card">
-            <h2>Missão</h2>
-            <p>
-                Nossa missão é oferecer serviços de excelência, atendendo às necessidades dos nossos clientes com
-                profissionalismo, ética e compromisso.
-            </p>
-        </div>
-
-        <div class="card">
-            <h2>Visão</h2>
-            <p>
-                Nossa visão é ser reconhecida como referência no setor, destacando-nos pela inovação, qualidade e
-                excelência em todos os nossos serviços.
-            </p>
-        </div>
-
-    </section>
-
-    <section class="conatiner_diferenciais">
-
-        <h2>Diferenciais</h2>
-        <div class="diferenciais">
-            <ul>
-                <li>Equipe altamente qualificada</li>
-                <li>Compromisso com a excelência</li>
-                <li>Inovação contínua</li>
-            </ul>
-        </div>
-              <div class="diferenciais">
-            <ul>
-                <li>Equipe altamente qualificada</li>
-                <li>Compromisso com a excelência</li>
-                <li>Inovação contínua</li>
-            </ul>
-        </div>
-              <div class="diferenciais">
-            <ul>
-                <li>Equipe altamente qualificada</li>
-                <li>Compromisso com a excelência</li>
-                <li>Inovação contínua</li>
-            </ul>
-        </div>
-    </section>
-
-  <footer class="container_rodape">
-    <div class="rodape">
-        <div class="rodape_coluna">
-            <h2>INDY </h2>
-            <h2>PROFESSIONAL</h2>
-            <p>Cuidar é deixar um legado.</p>
-        </div>
-
-        <div class="rodape_coluna">
-            <h3>Links Rápidos</h3>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="sobre.html">Sobre Nós</a></li>
-                <li><a href="produto.html">Produtos</a></li>
-            </ul>
-        </div>
-
-        <div class="rodape_coluna">
-            <h3>Contato</h3>
-            <p>Email: contato@suamarca.com</p>
-            <p>Telefone: (11) 99999-9999</p>
-        </div>
-
-        <!-- Nova coluna: Segue nós -->
-        <div class="rodape_coluna">
-            <h3>Segue nós</h3>
-            <div class="redes_sociais">
-                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <div class="sobre_grid">
+            <div class="sobre_imagem">
+                <div class="moldura_imagem">
+                    <img src="img/logo.jpeg" alt="Institucional Indy Professional">
+                </div>
+            </div>
+            <div class="sobre_texto">
+                <span class="tag_sobre">Quem Somos</span>
+                <h2>Transformando o cuidado capilar com excelência</h2>
+                <p>
+                    A <strong>Indy Professional</strong> nasceu do desejo de entregar aos salões de beleza e aos clientes finais produtos cosméticos de altíssima performance. Combinando tecnologia avançada e ingredientes selecionados, nossas fórmulas proporcionam tratamento profundo e resultados visíveis desde a primeira aplicação.
+                </p>
+                <p>
+                    Sob o lema <em>"Cuidar é deixar um legado"</em>, acreditamos que cada cabelo conta uma história e merece um ritual de tratamento único, ético e inovador.
+                </p>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="rodape_direitos">
-        <p>&copy; 2026 INDY PROFESSIONAL. Todos os direitos reservados.</p>
-        <p class="desenvolvido_por">
-            Desenvolvido por <a href="https://github.com/AlmeidaMailson/Indy_Profissional_site" target="_blank">MailsonAlmeida</a>
-        </p>
-    </div>
-</footer>
-</body>
+    <!-- Seção Missão, Visão e Valores -->
+    <section class="secao_pilares">
+        <div class="container_pilares">
+            <div class="card_pilar">
+                <div class="pilar_icone"><i class="fa-solid fa-bullseye"></i></div>
+                <h3>Missão</h3>
+                <p>Oferecer cosméticos capilares de alta performance que transformam a saúde dos fios, empoderando profissionais e clientes com resultados de excelência.</p>
+            </div>
 
-</html>
+            <div class="card_pilar">
+                <div class="pilar_icone"><i class="fa-solid fa-eye"></i></div>
+                <h3>Visão</h3>
+                <p>Ser reconhecida nacionalmente como marca referência em tecnologia capilar, qualidade superior e relacionamento próximo com nossos parceiros.</p>
+            </div>
+
+            <div class="card_pilar">
+                <div class="pilar_icone"><i class="fa-solid fa-gem"></i></div>
+                <h3>Valores</h3>
+                <p>Inovação contínua, compromisso com a saúde capilar, ética profissional, sustentabilidade e respeito à individualidade de cada cliente.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Liderança / Representantes (CEO e Sócios) -->
+    <section class="secao_lideranca">
+        <div class="container_lideranca">
+            <div class="secao_cabecalho">
+                <span class="subtitulo_secao">Mentes por trás do Legado</span>
+                <h2>Nossa <span class="destaque_rosa">Liderança</span></h2>
+                <p class="descricao_secao">Representantes dedicados a impulsionar a inovação e o crescimento da Indy Professional.</p>
+            </div>
+
+            <div class="grid_lideres">
+                <!-- CEO / Fundador -->
+                <div class="card_lider">
+                    <div class="foto_lider">
+                        <img src="img/Imagem 1.jpeg" alt="CEO Indy Professional">
+                    </div>
+                    <div class="info_lider">
+                        <h3>Nome do CEO</h3>
+                        <span class="cargo_lider">CEO & Fundador</span>
+                        <p>Liderando a visão estratégica e a expansão da marca com compromisso absoluto com a inovação.</p>
+                        <div class="redes_lider">
+                            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Representante / Sócio 2 -->
+                <div class="card_lider">
+                    <div class="foto_lider">
+                        <img src="img/Imagem 2.jpeg" alt="Diretor de Operações">
+                    </div>
+                    <div class="info_lider">
+                        <h3>Nome do Representante</h3>
+                        <span class="cargo_lider">Diretor de Operações</span>
+                        <p>Garantindo a máxima eficiência na distribuição e na gestão de parcerias com salões de beleza.</p>
+                        <div class="redes_lider">
+                            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Representante / Sócio 3 -->
+                <div class="card_lider">
+                    <div class="foto_lider">
+                        <img src="img/Imagem 3.jpeg" alt="Diretor Técnico">
+                    </div>
+                    <div class="info_lider">
+                        <h3>Nome do Representante</h3>
+                        <span class="cargo_lider">Diretor Técnico & P&D</span>
+                        <p>Supervisionando o desenvolvimento das fórmulas e a garantia do padrão de qualidade de cada linha.</p>
+                        <div class="redes_lider">
+                            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Diferenciais -->
+    <section class="container_diferenciais">
+        <div class="secao_cabecalho">
+            <span class="subtitulo_secao">Por que nos escolher?</span>
+            <h2>Nossos <span class="destaque_rosa">Diferenciais</span></h2>
+        </div>
+
+        <div class="grid_diferenciais">
+            <div class="item_diferencial">
+                <i class="fa-solid fa-flask-vial"></i>
+                <h3>Tecnologia Avançada</h3>
+                <p>Ativos concentrados de rápida penetração na fibra capilar.</p>
+            </div>
+            <div class="item_diferencial">
+                <i class="fa-solid fa-award"></i>
+                <h3>Padrão Salão</h3>
+                <p>Resultados profissionais adaptados para uso diário.</p>
+            </div>
+            <div class="item_diferencial">
+                <i class="fa-solid fa-leaf"></i>
+                <h3>Cruelty-Free</h3>
+                <p>Respeito absoluto à vida: produtos não testados em animais.</p>
+            </div>
+            <div class="item_diferencial">
+                <i class="fa-solid fa-handshake"></i>
+                <h3>Suporte ao Parceiro</h3>
+                <p>Atendimento próximo e suporte contínuo para cabeleireiros.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Botão Flutuante do WhatsApp -->
+    <a href="https://wa.me/5511999999999?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20a%20Indy%20Professional!" 
+       class="whatsapp_float" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       aria-label="Fale conosco no WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Rodapé -->
+    <footer class="container_rodape">
+        <div class="rodape_grid">
+            <div class="rodape_coluna marca">
+                <h2>INDY <span>PROFESSIONAL</span></h2>
+                <p>Cuidar é deixar um legado.</p>
+            </div>
+
+            <div class="rodape_coluna">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre Nós</a></li>
+                    <li><a href="produto.html">Produtos</a></li>
+                </ul>
+            </div>
+
+            <div class="rodape_coluna">
+                <h3>Contato</h3>
+                <p><i class="fa-solid fa-envelope"></i> contato@suamarca.com</p>
+                <p><i class="fa-solid fa-phone"></i> (11) 99999-9999</p>
+            </div>
+
+            <div class="rodape_coluna">
+                <h3>Siga-nos</h3>
+                <div class="redes_sociais">
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/AlmeidaMailson/Indy_Profissional_site" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="rodape_direitos">
+            <p>&copy; 2026 INDY PROFESSIONAL. Todos os direitos reservados.</p>
+            <p class="desenvolvido_por">
+                Desenvolvido por <a href="https://github.com/AlmeidaMailson/Indy_Profissional_site" target="_blank">MailsonAlmeida</a>
+            </p>
+        </div>
+    </footer>
 
 </body>
 

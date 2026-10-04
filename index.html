@@ -1,114 +1,273 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <!-- Cole isto no <head> do seu HTML -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
     <title>Indy Professional | Cuidar é deixar um legado</title>
-
+    
+    <!-- Font Awesome para Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Estilo Principal -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <Section class="menu">
-        <div class="logo_menu">
-            <img src="img/logo.jpeg" alt="Logo Indy Professional" width="100" height="100">
-        </div>
-        <div class="menu_links">
-            <ul>
-                <li><a href="index.html">Início</a></li>
+
+    <!-- Cabeçalho / Menu de Navegação -->
+    <header class="header">
+        <nav class="menu_container">
+            <div class="logo_menu">
+                <a href="index.html">
+                    <img src="img/logo.jpeg" alt="Logo Indy Professional">
+                </a>
+            </div>
+            <ul class="menu_links">
+                <li><a href="index.html" class="active">Início</a></li>
                 <li><a href="sobre.html">Sobre Nós</a></li>
                 <li><a href="produto.html">Produtos</a></li>
             </ul>
-        </div>
-    </Section>
+        </nav>
+    </header>
 
-    <section class="container_banner">
-        <div class="banner">
-            <img src="img/banner_compu.jpeg" alt="Banner Indy Professional"
-                style="max-width: 100%; height: auto; display: block;">
-        </div>
-    </section>
-    <section class="container_destaque">
+  <!-- Banner Principal Elegante -->
+<section class="container_banner">
+    <div class="banner_wrapper">
+        <!-- Imagem de Fundo -->
+        <img src="img/banner_compu.jpeg" alt="Banner Indy Professional" class="banner_img">
+        
+        <!-- Camada de Sombreamento para Leitura do Texto -->
+        <div class="banner_overlay"></div>
 
-        <div class="destaque">
+        <!-- Conteúdo Interno do Banner -->
+        <div class="banner_conteudo">
+            <span class="banner_badge"><i class="fa-solid fa-gem"></i> Linha Capilar Premium</span>
+            <h1 class="banner_titulo">
+                A tecnologia que o seu cabelo precisa, <br>
+                <span>o cuidado que você merece.</span>
+            </h1>
+            <p class="banner_subtitulo">
+                Resultados de salão no seu dia a dia. Descubra nossas linhas de tratamento profissional.
+            </p>
 
-            <div class="destaque_card">
-                <h2>Destaque 1</h2>
+            <div class="banner_acoes">
+                <a href="produto.html" class="btn_banner_primary">
+                    <i class="fa-solid fa-bag-shopping"></i> Ver Catálogo
+                </a>
+                <a href="https://wa.me/5511999999999" target="_blank" class="btn_banner_secondary">
+                    <i class="fa-brands fa-whatsapp"></i> Falar com Consultora
+                </a>
             </div>
-            <div class="destaque_card">
-                <h2>Destaque 2</h2>
-            </div>
-            <div class="destaque_card">
-                <h2>Destaque 3</h2>
-            </div>
-        </div>
-    </section>
-    <section class="container_prova">
 
-        <h1>Provas Sociais</h1>
-
-        <div class="prova">
-                  <div class="prova_card">
-
-                <h2>Prova 1</h2>
-            </div>
-            <div class="prova_card">
-                <h2>Prova 1</h2>
-            </div>
-            <div class="prova_card">
-                <h2>Prova 1</h2>
-            </div>
-        </div>
-
-      
-    </section>
-
-  <footer class="container_rodape">
-    <div class="rodape">
-        <div class="rodape_coluna">
-            <h2>INDY </h2>
-            <h2>PROFESSIONAL</h2>
-            <p>Cuidar é deixar um legado.</p>
-        </div>
-
-        <div class="rodape_coluna">
-            <h3>Links Rápidos</h3>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="sobre.html">Sobre Nós</a></li>
-                <li><a href="produto.html">Produtos</a></li>
-            </ul>
-        </div>
-
-        <div class="rodape_coluna">
-            <h3>Contato</h3>
-            <p>Email: contato@suamarca.com</p>
-            <p>Telefone: (11) 99999-9999</p>
-        </div>
-
-        <!-- Nova coluna: Segue nós -->
-        <div class="rodape_coluna">
-            <h3>Segue nós</h3>
-            <div class="redes_sociais">
-                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <!-- Destaques Rápidos -->
+            <div class="banner_recursos">
+                <div class="recurso_item">
+                    <i class="fa-solid fa-sparkles"></i>
+                    <span>Brilho Intenso</span>
+                </div>
+                <div class="recurso_item">
+                    <i class="fa-solid fa-leaf"></i>
+                    <span>Sem Parabenos</span>
+                </div>
+                <div class="recurso_item">
+                    <i class="fa-solid fa-award"></i>
+                    <span>Qualidade Profissional</span>
+                </div>
             </div>
         </div>
     </div>
+</section>
+   <!-- Hero Section de Apresentação -->
+<section class="hero_section">
+    <div class="hero_container">
+        <!-- Coluna de Texto e Apresentação -->
+        <div class="hero_conteudo">
+            <span class="hero_tagline">Indy Professional</span>
+            <h1 class="hero_titulo">Cuidar é deixar um <span class="destaque_rosa">legado.</span></h1>
+            <p class="hero_descricao">
+                Desenvolvemos fórmulas de alta performance para realçar a beleza única de cada cabelo. 
+                Inovação, tecnologia e cuidado profissional reunidos em produtos feitos para transformar.
+            </p>
+            <div class="hero_botoes">
+                <a href="produto.html" class="btn_principal">Conheça Nossos Produtos</a>
+                <a href="sobre.html" class="btn_secundario">Sobre a Marca</a>
+            </div>
+        </div>
 
-    <div class="rodape_direitos">
-        <p>&copy; 2026 INDY PROFESSIONAL. Todos os direitos reservados.</p>
-        <p class="desenvolvido_por">
-            Desenvolvido por <a href="https://github.com/AlmeidaMailson/Indy_Profissional_site" target="_blank">MailsonAlmeida</a>
-        </p>
+        <!-- Coluna da Imagem Principal -->
+        <div class="hero_imagem">
+            <div class="imagem_wrapper">
+                <img src="img/Imagem 1.jpeg" alt="Linha de produtos Indy Professional">
+            </div>
+        </div>
     </div>
-</footer>
+</section>
+<!-- Seção Mais Vendidos -->
+<section class="secao_produtos">
+    <div class="container_produtos">
+        
+        <!-- Cabeçalho da Seção -->
+        <div class="secao_cabecalho">
+            <span class="subtitulo_secao">Linha Profissional</span>
+            <h2 class="titulo_secao">Queridinhos da <span class="destaque_rosa">Indy</span></h2>
+            <p class="descricao_secao">
+                Os produtos de alta performance mais desejados pelos melhores profissionais de beleza.
+            </p>
+        </div>
+
+        <!-- Grid de Cards de Produtos -->
+        <div class="grid_produtos">
+            
+            <!-- Card Produto 1 -->
+            <div class="card_produto">
+                <span class="badge_card destaque">Mais Vendido</span>
+                <div class="imagem_produto">
+                    <img src="img/Imagem 1.jpeg" alt="Kit Reconstrução Capilar">
+                    <div class="overlay_card">
+                        <a href="https://wa.me/5511999999999?text=Gostaria%20de%20comprar%20o%20Kit%20Reconstrução%20Capilar" target="_blank" class="btn_quick_view">
+                            <i class="fa-brands fa-whatsapp"></i> Comprar Agora
+                        </a>
+                    </div>
+                </div>
+                <div class="info_produto">
+                    <span class="categoria_produto">Tratamento Intenso</span>
+                    <h3 class="nome_produto">Kit Reconstrução Capilar</h3>
+                    <p class="detalhes_produto">Restauração profunda e brilho tridimensional para fios danificados.</p>
+                    <div class="rodape_card">
+                        <span class="preco_produto">R$ 189,90</span>
+                        <a href="produto.html" class="btn_detalhes"><i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card Produto 2 -->
+            <div class="card_produto">
+                <span class="badge_card novo">Lançamento</span>
+                <div class="imagem_produto">
+                    <img src="img/Imagem 2.jpeg" alt="Máscara de Nutrição">
+                    <div class="overlay_card">
+                        <a href="https://wa.me/5511999999999?text=Gostaria%20de%20comprar%20a%20Máscara%20de%20Nutrição" target="_blank" class="btn_quick_view">
+                            <i class="fa-brands fa-whatsapp"></i> Comprar Agora
+                        </a>
+                    </div>
+                </div>
+                <div class="info_produto">
+                    <span class="categoria_produto">Nutrição Profunda</span>
+                    <h3 class="nome_produto">Máscara Nutri Glow</h3>
+                    <p class="detalhes_produto">Fórmula com óleos nobres para selagem imediata das cutículas.</p>
+                    <div class="rodape_card">
+                        <span class="preco_produto">R$ 129,90</span>
+                        <a href="produto.html" class="btn_detalhes"><i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card Produto 3 -->
+            <div class="card_produto">
+                <div class="imagem_produto">
+                    <img src="img/Imagem 3.jpeg" alt="Sérum Finalizador">
+                    <div class="overlay_card">
+                        <a href="https://wa.me/5511999999999?text=Gostaria%20de%20comprar%20o%20Sérum%20Finalizador" target="_blank" class="btn_quick_view">
+                            <i class="fa-brands fa-whatsapp"></i> Comprar Agora
+                        </a>
+                    </div>
+                </div>
+                <div class="info_produto">
+                    <span class="categoria_produto">Finalizadores</span>
+                    <h3 class="nome_produto">Sérum Rose Gold Finalizador</h3>
+                    <p class="detalhes_produto">Proteção térmica avançada e eliminação imediata de frizz.</p>
+                    <div class="rodape_card">
+                        <span class="preco_produto">R$ 89,90</span>
+                        <a href="produto.html" class="btn_detalhes"><i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card Produto 4 -->
+            <div class="card_produto">
+                <span class="badge_card destaque">Destaque</span>
+                <div class="imagem_produto">
+                    <img src="img/Imagem 4.jpeg" alt="Shampoo Detox">
+                    <div class="overlay_card">
+                        <a href="https://wa.me/5511999999999?text=Gostaria%20de%20comprar%20o%20Shampoo%20Detox" target="_blank" class="btn_quick_view">
+                            <i class="fa-brands fa-whatsapp"></i> Comprar Agora
+                        </a>
+                    </div>
+                </div>
+                <div class="info_produto">
+                    <span class="categoria_produto">Cuidados Diários</span>
+                    <h3 class="nome_produto">Shampoo Detox Purificante</h3>
+                    <p class="detalhes_produto">Limpeza suave do couro cabeludo sem ressecar as pontas.</p>
+                    <div class="rodape_card">
+                        <span class="preco_produto">R$ 79,90</span>
+                        <a href="produto.html" class="btn_detalhes"><i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Botão Ver Todos -->
+        <div class="container_btn_todos">
+            <a href="produto.html" class="btn_ver_todos">Ver Catálogo Completo</a>
+        </div>
+
+    </div>
+</section>
+    <!-- Botão Flutuante do WhatsApp -->
+    <a href="https://wa.me/5511999999999?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20os%20produtos!" 
+       class="whatsapp_float" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       aria-label="Fale conosco no WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Rodapé -->
+    <footer class="container_rodape">
+        <div class="rodape_grid">
+            <div class="rodape_coluna marca">
+                <h2>INDY <span>PROFESSIONAL</span></h2>
+                <p>Cuidar é deixar um legado.</p>
+            </div>
+
+            <div class="rodape_coluna">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre Nós</a></li>
+                    <li><a href="produto.html">Produtos</a></li>
+                </ul>
+            </div>
+
+            <div class="rodape_coluna">
+                <h3>Contato</h3>
+                <p><i class="fa-solid fa-envelope"></i> contato@suamarca.com</p>
+                <p><i class="fa-solid fa-phone"></i> (11) 99999-9999</p>
+            </div>
+
+            <div class="rodape_coluna">
+                <h3>Siga-nos</h3>
+                <div class="redes_sociais">
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/AlmeidaMailson/Indy_Profissional_site" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="rodape_direitos">
+            <p>&copy; 2026 INDY PROFESSIONAL. Todos os direitos reservados.</p>
+            <p class="desenvolvido_por">
+                Desenvolvido por <a href="https://github.com/AlmeidaMailson/Indy_Profissional_site" target="_blank">MailsonAlmeida</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Script JavaScript -->
+    <script src="script.js"></script>
 </body>
 
 </html>
